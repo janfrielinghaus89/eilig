@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../style/linkgenerator.css">
+  <title>Einmal Link Generator - Auszug</title>
+</head>
+<body class="dba-background">
+<div class="dba-front-background">
+  <h2 class="unnamed-character-style-5 success-header">DATENBANK AUSZUG</h2>
+  <p class="success-text">
+    <span class="unnamed-character-style-6">Hier findest du alle aktuellen Einträge in der Datenbank</span>
+  </p>
+  <p class="result-message-header">
+    <span>AKTUELLE DATENBANK-EINTRÄGE</span>
+  </p>
+    <table class="dba-result unnamed-character-style-6">
+      <thead>
+      <tr>
+        <th>Identifier</th>
+        <th>Nachricht</th>
+        <th>Ablaufdatum</th>
+        <th>Löschen</th>
+      </tr>
+      </thead>
+      <tbody>
+      {{table_content}}
+      </tbody>
+    </table>
+</div>
+<!-- <script src="../script.js"></script> -->
+</body>
+</html>

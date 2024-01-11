@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/linkgenerator.css">
+  <title>Einmal Link Generator</title>
+</head>
+<body class="background-basic">
+<div class="front-background">
+  <h2 class="header-text unnamed-character-style-5">Einmal-Link-Generator</h2>
+  <p class="desc-feld unnamed-character-style-6">
+    Füge im Eingabefeld dein Passwort, deine geheime Nachricht oder deinen Link ein. Anschließend kannst du über „Link generieren“ deinen Einmal-Link erstellen und ihn an einen Empfänger deiner Wahl senden.
+  </p>
+  <p class="unnamed-character-style-4">Nachricht anlegen</p>
+  <form id="nachrichtanlegen" action="" method="post">
+    <textarea maxlength="500" class="text-feld" id="nachricht" name="nachricht" placeholder="Bitte gib hier deine Information ein, die du übermitteln möchtest." required rows="4" cols="50"></textarea><br>
+    <p class="ablauf-text">
+      <span class="unnamed-character-style-4">Bis wann soll der Link maximal gültig sein? </span>
+      <span class="unnamed-character-style-3">(Maximal 2 Wochen)</span>
+    </p>
+    <br>
+    <div class="datum-box">
+      <img src="../style/img/calendar-days.png" alt="Kalender-Symbol">
+      <input type="datetime-local" id="ablauf" name="ablauf" required class="datum-rahmen datum-innen">
+    </div>
+    <br>
+    <input type="submit" name="linkgenerieren" value="Einmal-Link generieren" class="button-1 unnamed-character-style-1">
+  </form><br>
+  <form id="datenbanklink" target="_blank" action="/eilig/list" method="post">
+    <input type="hidden" name="apiKey" value="$$apiKey$$">
+    <button id="databaseButton" class="button-1 unnamed-character-style-1">Zur Datenbank-Übersicht</button>
+  </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
